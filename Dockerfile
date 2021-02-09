@@ -9,5 +9,5 @@ VOLUME ["/src", "/usr/share/dependency-check/data","/report"]
 
 WORKDIR /src
 
-ENTRYPOINT ["/usr/share/dependency-check/bin/dependency-check.sh","--scan","/src","--format","JSON","--out","/report"]
+ENTRYPOINT ["/usr/share/dependency-check/bin/dependency-check.sh","--scan","/src","--format","JSON","--out","/src"]
 CMD ["--project", "OWASP Dependecy Check Project"]
